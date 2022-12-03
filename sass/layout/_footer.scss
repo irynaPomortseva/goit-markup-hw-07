@@ -1,0 +1,114 @@
+.footer {
+    background: var(--secondary-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.footer__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo__footer {
+    color: var(--address-list-color);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.address-list__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--address-list__link);
+}
+
+.address-list__link_color_white {
+    color: var(--address-list-color);
+}
+
+.footer_join-us {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--address-list-color);
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-list__link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            @include transition(background-color);
+        }
+}
+
+.footer-list__icon {
+    fill: var(--address-list-color);
+
+    .footer-list__link:hover &,
+    .footer-list__link:focus & {
+            fill: var(--address-list-color);
+            @include transition(fill);
+        }
+}
+
+.mailing {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--address-list-color);
+}
+
+.mailing__form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mailing__email {
+    min-width: 360px;
+    background-color: #2F303A;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    &:focus {
+            outline: none;
+        }
+}
+
+.button__main_footer {
+    @include centeredFlex();
+    padding: 10px 28px;
+}
+
+.mailing__icon {
+    margin-left: 10px;
+}
