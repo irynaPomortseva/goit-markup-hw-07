@@ -189,7 +189,7 @@
     .contact-form__checkbox:checked + & {
         border-color: var(--accent-color);
         background-color: var(--accent-color);
-        background-image: url(/img/icon-check.svg);
+        background-image: url(../img/icon-check.svg);
         background-origin: border-box;
         background-size: contain;
     }
