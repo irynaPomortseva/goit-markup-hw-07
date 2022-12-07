@@ -102,9 +102,10 @@
             transform: translateY(100%);
             @include transition(transform);
         }
-                .projects__item:hover & {
-                    transform: translateX(0);
-                }
+}
+
+.projects__item:hover .projects__overlay::before {
+    transform: translateX(0);
 }
 
 .projects__overlay-list {
