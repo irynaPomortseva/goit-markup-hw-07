@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/active-page";
 @import "./utils/mixins";
 
 @import "./base/common";
@@ -22,3 +21,5 @@
 @import "./layout/our-clients";
 @import "./layout/footer";
 @import "./layout/portfolio";
+
+@import "./utils/active-page";
